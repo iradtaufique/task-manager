@@ -111,7 +111,7 @@ Sections are completed progressively. Each section ends with a Git commit.
 | # | Section | Status | Branch | Key Commit |
 |---|---|---|---|---|
 | 01 | Environment & Tools Setup | ✅ Complete | `main` | `chore: initial project scaffold` |
-| 02 | Git & GitHub Workflow | ⬜ Not started | — | — |
+| 02 | Git & GitHub Workflow | ✅ Complete | `develop` | `Chore: git workflow and branch protection configured` |
 | 03 | MySQL Fundamentals | ⬜ Not started | — | — |
 | 04 | Joins, Indexes & Relations | ⬜ Not started | — | — |
 | 05 | Django Models + MySQL | ⬜ Not started | — | — |
