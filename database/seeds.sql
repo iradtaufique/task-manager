@@ -6,6 +6,7 @@
 CREATE DATABASE IF NOT EXISTS task_manager_db;
 USE task_manager_db;
 
+-- Categories table
 CREATE TABLE IF NOT EXISTS tasks (
     id          INT          NOT NULL AUTO_INCREMENT,
     title       VARCHAR(255) NOT NULL,
@@ -17,6 +18,24 @@ CREATE TABLE IF NOT EXISTS tasks (
     PRIMARY KEY (id)
 );
 
+
+-- Indexes
+CREATE INDEX idx_tasks_status           ON tasks(status);
+CREATE INDEX idx_tasks_category         ON tasks(category_id);
+CREATE INDEX idx_tasks_created          ON tasks(created_at);
+CREATE INDEX idx_tasks_status_completed ON tasks(status, completed);
+
+
+-- Seed categories
+INSERT INTO categories (name, color) VALUES
+    ('Learning', '#6366f1'),
+    ('Personal', '#22c55e'),
+    ('Work',     '#f59e0b'),
+    ('Health',   '#ef4444'),
+    ('Finance',  '#3b82f6');
+
+
+-- Tasks table
 INSERT INTO tasks (title, description, status, completed)
 VALUES
     ('Set up GitHub repository',   'Init repo, add gitignore, push to GitHub',  'done',        TRUE),
