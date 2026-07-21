@@ -113,7 +113,7 @@ Sections are completed progressively. Each section ends with a Git commit.
 | 01 | Environment & Tools Setup | ✅ Complete | `main` | `chore: initial project scaffold` |
 | 02 | Git & GitHub Workflow | ✅ Complete | `develop` | `Chore: git workflow and branch protection configured` |
 | 03 | MySQL Fundamentals | ✅ Complete | develop | `feat: add MySQL schema and seed data for tasks table` |
-| 04 | Joins, Indexes & Relations | ⬜ Not started | — | — |
+| 04 | Joins, Indexes & Relations | ✅ Complete | `develop` | `feat: add categories table, foreign key, indexes and JOIN seed data` |
 | 05 | Django Models + MySQL | ⬜ Not started | — | — |
 | 06 | REST API with DRF | ⬜ Not started | — | — |
 | 07 | React Fundamentals | ⬜ Not started | — | — |
