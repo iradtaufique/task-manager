@@ -144,7 +144,7 @@ Make sure the following are installed before running this project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/task-manager.git
+git clone https://github.com/iradtaufique/task-manager.git
 cd task-manager
 ```
 
