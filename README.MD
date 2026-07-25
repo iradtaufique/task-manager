@@ -111,11 +111,11 @@ Sections are completed progressively. Each section ends with a Git commit.
 | # | Section | Status | Branch | Key Commit |
 |---|---|---|---|---|
 | 01 | Environment & Tools Setup | ✅ Complete | `main` | `chore: initial project scaffold` |
-| 02 | Git & GitHub Workflow | ⬜ Not started | — | — |
-| 03 | MySQL Fundamentals | ⬜ Not started | — | — |
-| 04 | Joins, Indexes & Relations | ⬜ Not started | — | — |
-| 05 | Django Models + MySQL | ⬜ Not started | — | — |
-| 06 | REST API with DRF | ⬜ Not started | — | — |
+| 02 | Git & GitHub Workflow | ✅ Complete | `develop` | `Chore: git workflow and branch protection configured` |
+| 03 | MySQL Fundamentals | ✅ Complete | `develop` | `feat: add MySQL schema and seed data for tasks table` |
+| 04 | Joins, Indexes & Relations | ✅ Complete | `develop` | `feat: add categories table, foreign key, indexes and JOIN seed data` |
+| 05 | Django Models + MySQL | ✅ Complete | `develop` | `feat: Add Initial Migrations for category and tasks models` |
+| 06 | REST API with DRF | ✅ Complete | `develop` | `Mark section 6 complete and fill in API reference` |
 | 07 | React Fundamentals | ⬜ Not started | — | — |
 | 08 | Read & Create Tasks | ⬜ Not started | — | — |
 | 09 | Update & Delete Tasks | ⬜ Not started | — | — |
@@ -144,7 +144,7 @@ Make sure the following are installed before running this project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/task-manager.git
+git clone https://github.com/iradtaufique/task-manager.git
 cd task-manager
 ```
 
@@ -226,12 +226,18 @@ React runs at → `http://localhost:5173`
 
 | Method | Endpoint | Description | Status |
 |---|---|---|---|
-| `GET` | `/api/tasks/` | List all tasks | ⬜ Coming in Section 6 |
-| `POST` | `/api/tasks/` | Create a new task | ⬜ Coming in Section 6 |
-| `GET` | `/api/tasks/:id/` | Retrieve a single task | ⬜ Coming in Section 6 |
-| `PUT` | `/api/tasks/:id/` | Update a task (full) | ⬜ Coming in Section 6 |
-| `PATCH` | `/api/tasks/:id/` | Update a task (partial) | ⬜ Coming in Section 6 |
-| `DELETE` | `/api/tasks/:id/` | Delete a task | ⬜ Coming in Section 6 |
+| `GET`    | `/api/tasks/`          | List all tasks                  | ✅ Complete |
+| `POST`   | `/api/tasks/`          | Create a new task               | ✅ Complete |
+| `GET`    | `/api/tasks/:id/`      | Retrieve a single task          | ✅ Complete |
+| `PUT`    | `/api/tasks/:id/`      | Update a task (full)            | ✅ Complete |
+| `PATCH`  | `/api/tasks/:id/`      | Update a task (partial)         | ✅ Complete |
+| `DELETE` | `/api/tasks/:id/`      | Delete a task                   | ✅ Complete |
+| `GET`    | `/api/tasks/summary/`  | Get task counts by status       | ✅ Complete |
+| `GET`    | `/api/categories/`     | List all categories             | ✅ Complete |
+| `POST`   | `/api/categories/`     | Create a new category           | ✅ Complete |
+| `GET`    | `/api/categories/:id/` | Retrieve a single category      | ✅ Complete |
+| `PUT`    | `/api/categories/:id/` | Update a category               | ✅ Complete |
+| `DELETE` | `/api/categories/:id/` | Delete a category               | ✅ Complete |
 
 ---
 
